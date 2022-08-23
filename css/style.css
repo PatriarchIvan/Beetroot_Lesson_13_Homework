@@ -1,10 +1,73 @@
 .container {
-    max-width: 1200px;
-    margin: 0 120px;
+    max-width: 1200px; 
+    margin: 55px 120px;
     border: 1px solid black;
 }
 
-.form_wrapper {
-    display: flex;
+.form_section_wrapper {
     width: 50%;
+    margin: 0 15px;
+    border: 1px solid red;
+    max-width: 570px;
+    max-height: 590px;
 }
+
+.form,
+.form_footer {
+    margin: 0 35px;
+}
+
+.form_title {
+    margin: 35px 0 20px 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.form_input_title {
+    display: inline-block;
+    border: 1px solid black;
+    margin: 0 15px 0 0;
+}
+
+.form_input_last_name:last-child {
+    margin: 0 0;
+}
+
+.form_input_first_name, 
+.form_input_last_name {
+    width: 200px;
+    border: 1px solid blue;
+}
+
+
+
+.form_email {
+}
+.form_span_email_text {
+}
+.form_sex_radio {
+}
+.form_country {
+}
+.form_select_country_list {
+}
+.form_button {
+}
+.form_footer_text {
+}
+.form_footer_span {
+}
+.form_footer_button {
+}
+
+.form_input_email {
+}
+.form_input_sex {
+}
+.form_select_country_item {
+}
+.form_select_input_city {
+}
+.form_footer_text_link {
+}
+

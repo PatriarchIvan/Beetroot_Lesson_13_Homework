@@ -12,20 +12,15 @@
 
 <body>
     <div class="container">
-        <div class="form_wrapper">
+        <section class="form_section_wrapper">
             <form action="#" class="form">
                 <h2 class="form_title">Create an Account</h2>
-                <label for="form_first_name" class="form_input_title">First Name</label>
-                <input type="text" id="first_name" class="form_input_last" required>
-                <label for="form_last_name" class="form_input_title">Last Name</label>
-                <input type="text" id="last_name" class="form_input_last" required>
-                <label for="form_user_mail" class="form_email">E-mail</label>
-                <input type="mail" class="form_input_email" id="user_mail" required>
+                <label class="form_input_title">First Name<input type="text" class="form_input_first_name" required></label>
+                <label class="form_input_title">Last Name<input type="text" class="form_input_last_name" required></label>
+                <label class="form_email">E-mail<input type="mail" class="form_input_email" required></label>
                 <span class="form_span_email_text">We'll never share your email with anyone else.</span>
-                <label for="male_m" class="form_sex_radio">Male</label>
-                <input type="radio" class="form_input_sex" id="male_m" value="" name="gender" required>
-                <label for="male_f" class="form_sex_radio">Female</label>
-                <input type="radio" class="form_input_sex" id="male_f" value="" name="gender" required>
+                <label class="form_sex_radio">Male<input type="radio" class="form_input_sex" value="" name="gender" required></label>
+                <label class="form_sex_radio">Female<input type="radio" class="form_input_sex" value="" name="gender" required></label>
                 <label for="form_select_country" class="form_country">Country</label>
                 <select class="form_select_country_list" placeholder="Select" required>
                     <option value="" class="form_select_country_item">Ukraine</option>
@@ -34,21 +29,25 @@
                     <option value="" class="form_select_country_item">USA</option>
                     <option value="" class="form_select_country_item">Other</option>
                 </select>
-                <label for="form_select_city" class="form_country">City</label>
-                <input type="text" class="form_select_input_city" id="form_select_city" required>
+                <label class="form_country">City<input type="text" class="form_select_input_city" required></label>
                 <button type="submit" class="form_button">Sign Up</button>
             </form>
             <footer class="form_footer">
                 <p class="form_footer_text">
-                    By clicking the 'Sign Up' button, you confirm that you accept our 
-                    <a href="#" class="form_footer_text_link">Terms of Use</a>and 
+                    By clicking the 'Sign Up' button, you confirm that you accept our
+                    <a href="#" class="form_footer_text_link">Terms of Use</a>and
                     <a href="#" class="form_footer_text_link">Privacy Policy</a>
                 </p>
                 <span class="form_footer_span">Have an account?</span>
                 <button class="form_footer_button">Log In</button>
             </footer>
-        </div>
+        </section>
 
+        <section class="form_section_wrapper">
+            <form action="#" class="form">
+               
+            </form>
+        </section>
     </div>
 </body>
 
