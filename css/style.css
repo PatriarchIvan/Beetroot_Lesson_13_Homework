@@ -1,0 +1,10 @@
+.container {
+    max-width: 1200px;
+    margin: 0 120px;
+    border: 1px solid black;
+}
+
+.form_wrapper {
+    display: flex;
+    width: 50%;
+}
