@@ -62,19 +62,44 @@
             </footer>
         </section>
 
-        <section class="form_section_wrapper">
-            <form action="#" class="form">
-                <h2 class="form_title">Profile</h2>
-                <div class="form_profile_image">
-                    <div class="form_profile_button">
-                        <span class="form_profile_button_img"><img src="./img/icons/icon_photo.png" alt=""></span>
-                        <span class="form_profile_load_text">Up to 1 MB (300x300 px)</span>
+        <section class="profile_section_wrapper">
+            <form action="#" class="profile">
+                <h2 class="profile_title">Profile</h2>
+                <div class="profile_image">
+                    <div class="profile_load__button">
+                        <span class="profile_load_btn_img"><img src="./img/icons/icon_photo.png" alt=""></span>
+                        <span class="profile_load_text">Up to 1 MB (300x300 px)</span>
                     </div>
-                    <img src="./img/user_photo/Image.png" alt="User Photo" class="form_profile_photo">
-                    <input id="file_load" type="file" class="form_profile_load">
-                    
-                    <button class="form_profile_delete_btn"></button>
+                    <img src="./img/user_photo/Image.png" alt="User Photo" class="profile_photo_image">
+                    <input id="file_load" type="file" class="profile_photo_btn_hidden">
+                    <button class="profile_photo_delete_btn"></button>
                 </div>
+                <div class="profile_name">
+                    <label class="profile_input_title">Name<input type="text" class="profile_input_name"></label>
+                    <label class="profile_input_title">E-mail<input type="mail" class="profile_input_email"></label>
+                </div>
+                <div class="profile_geo">
+                    <div class="profile_country">
+                        <label for="profile_select_country" class="profile_country">Country</label>
+                        <!-- <span class="form_select_country_span">Select your country...</span> -->
+                        <select class="profile_select_country_list">
+                            <option value="" class="profile_select_country_item">Ukraine</option>
+                            <option value="" class="profile_select_country_item">EU</option>
+                            <option value="" class="profile_select_country_item">USA</option>
+                            <option value="" class="profile_select_country_item">Other</option>
+                            <option value="" class="profile_select_country_item" disabled>Ru&#8623&#8623land</option>
+                        </select>
+                    </div>
+                    <div class="profile_city">
+                        <label class="profile_city">City<input type="text" class="profile_select_input_city"></label>
+                    </div>
+                </div>
+                <div class="profile_pass">
+                    <label class="profile_input_title">Zip Code<input type="password"
+                            class="profile_input_pass"></label>
+                    <label class="profile_input_title">Phone Number<input type="tel" class="profile_input_tel"></label>
+                </div>
+                <button type="submit" class="profile_button">Update</button>
             </form>
         </section>
     </div>

@@ -19,10 +19,12 @@ input[type=mail]:focus {
 .container {
     max-width: 1200px;
     display: flex;
+    justify-content: space-around;
     margin: 55px auto;
 }
 
-.form_section_wrapper {
+.form_section_wrapper,
+.profile_section_wrapper {
     width: 50%;
     margin: 0 15px;
     max-width: 570px;
@@ -35,35 +37,44 @@ input[type=mail]:focus {
     margin: 0 35px;
 }
 
-.form_title {
+.form_title,
+.profile_title {
     margin: 35px 0 20px 0;
     font-size: 24px;
     font-weight: 500;
 }
 
-.user_name {
+.user_name,
+.profile_name,
+.profile_pass {
     display: flex;
     justify-content: space-between;
 }
 
-.form_input_title {
+.form_input_title,
+.profile_input_title {
     font-size: 15px;
     flex-basis: 48%;
     margin: 10px 0;
 }
 
 .form_input_first_name,
-.form_input_last_name {
-    font-size: 20px;
+.form_input_last_name,
+.profile_input_name,
+.profile_input_pass,
+.profile_input_tel
+{
+    font-size: 13px;
     width: 100%;
     margin: 10px 0 0 0;
     height: 40px;
 }
 
-.form_input_email {
+.form_input_email,
+.profile_input_email {
     width: 100%;
     margin: 10px 0;
-    font-size: 20px;
+    font-size: 13px;
     height: 40px;
 }
 
@@ -87,28 +98,33 @@ input[type=mail]:focus {
     order: -1;
 }
 
-.user_geo {
+.user_geo,
+.profile_geo {
     display: flex;
     position: relative;
     justify-content: space-between;
 }
 
 .user_country,
-.user_city {
+.user_city,
+.profile_country,
+.profile_city {
     position: relative;
     display: flex;
     flex-direction: column;
     flex-basis: 48%;
 }
 
-.form_select_input_city {
+.form_select_input_city,
+.profile_select_input_city {
     margin: 10px 0 0 0;
     background:transparent;
     height: 40px;
     width: 100%;
 }
 
-.form_select_country_list {
+.form_select_country_list,
+.profile_select_country_list {
     margin: 10px 0 0 0;
     height: 40px;
     font-size: 15px;
@@ -127,7 +143,8 @@ option[disabled] {
     background: #ba2020
 }
 
-.user_geo::after {
+.user_geo::after,
+.profile_geo::after {
     content: '';
     position: absolute;
     top: 20px;
@@ -137,7 +154,8 @@ option[disabled] {
     height: 45px;
 }
     
-.form_button {
+.form_button,
+.profile_button {
     width: 100%;
     height: 50px;
     margin: 20px 0;
@@ -187,36 +205,38 @@ option[disabled] {
     margin: 0 20px 0;
 }
 
-.form_profile_image {
+/* *********PROFILE********** */
+.profile_image {
     display: flex;
     flex-basis: 50%;
     position: relative;
+    margin: 0 0 20px 0;
 }
 
-.form_profile_load {
+.profile_photo_btn_hidden {
     opacity: 0;
     width: 140px;
     height: 30px;
     margin: 0 40px 15px 10px;
 }
 
-.form_preofile_button {
+.profile_load__button {
     position: absolute;
-    min-width: 140px;
+    min-width: 150px;
     height: 30px;
     top: 0;
-    left: 100px;
+    left: 90px;
     border: 1px solid #E4E4E4;
     border-radius: 2px;
 }
 
-.form_profile_button_img {
+.profile_load_btn_img {
     position: relative;
     top: 7px;
-    left: 114px;
+    left: 115px;
 }
 
-.form_profile_delete_btn {
+.profile_photo_delete_btn {
     width: 30px;
     height: 30px;
     background: url(../img/icons/icon_delete.svg) no-repeat center;
@@ -224,8 +244,17 @@ option[disabled] {
     border-radius: 2px;
 }
 
-.form_profile_load_text {
+.profile_load_text {
     position: absolute;
     top: 45px;
     left: 0;
+    font-size: 13px;
+}
+
+.profile_geo::after {
+    left: 259px
+}
+
+.profile_button {
+    width: 30%;
 }
