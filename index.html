@@ -54,34 +54,22 @@
                     <a href="#" class="form_footer_text_link">Terms of Use</a> and
                     <a href="#" class="form_footer_text_link">Privacy Policy</a>
                 </p>
-                <span class="form_footer_span">Have an account?</span>
-                <button class="form_footer_button">Log In</button>
+                <div class="form_footer_link">
+                    <span class="form_footer_span">Have an account?</span>
+                    <a class="form_footer_link_link" href="#">Log In</a>
+                </div>
             </footer>
         </section>
 
         <section class="form_section_wrapper">
             <form action="#" class="form">
-                <h2 class="form_title">Create an Account</h2>
-                <label class="form_input_title">First Name<input type="text" class="form_input_first_name"
-                        required></label>
-                <label class="form_input_title">Last Name<input type="text" class="form_input_last_name"
-                        required></label>
-                <label class="form_email">E-mail<input type="mail" class="form_input_email" required></label>
-                <span class="form_email_text">We'll never share your email with anyone else.</span>
-                <label class="form_sex_radio">Male<input type="radio" class="form_input_sex" value="" name="gender"
-                        required></label>
-                <label class="form_sex_radio">Female<input type="radio" class="form_input_sex" value="" name="gender"
-                        required></label>
-                <label for="form_select_country" class="form_country">Country</label>
-                <select class="form_select_country_list" placeholder="Select" required>
-                    <option value="" class="form_select_country_item">Ukraine</option>
-                    <option value="" class="form_select_country_item" disabled>Ru&#8623&#8623land</option>
-                    <option value="" class="form_select_country_item">EU</option>
-                    <option value="" class="form_select_country_item">USA</option>
-                    <option value="" class="form_select_country_item">Other</option>
-                </select>
-                <label class="form_country">City<input type="text" class="form_select_input_city" required></label>
-                <button type="submit" class="form_button">Sign Up</button>
+                <h2 class="form_title">Profile</h2>
+                <div class="form_profile">
+                    <img src="./img/profile_photo" alt="User Photo" class="form_profile_photo">
+                    <input id='file_load'type="file" class="form_profile_load">
+                    <label for="file_load">Up to 1 MB (300x300 px)</label>
+                    <button class="form_profile_delete"></button>
+                </div>
             </form>
         </section>
     </div>
