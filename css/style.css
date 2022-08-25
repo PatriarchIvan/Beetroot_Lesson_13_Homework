@@ -1,6 +1,6 @@
 .container {
     max-width: 1200px;
-    display: flex; 
+    display: flex;
     margin: 55px auto;
     border: 1px solid black;
 }
@@ -15,6 +15,7 @@
 
 .form,
 .form_footer {
+    position: relative;
     margin: 0 35px;
 }
 
@@ -35,7 +36,7 @@
     margin: 10px 0;
 }
 
-.form_input_first_name, 
+.form_input_first_name,
 .form_input_last_name {
     border: 1px solid blue;
     width: 100%;
@@ -51,8 +52,7 @@
     font-size: 13px;
 }
 
-.form_email {
-}
+.form_email {}
 
 .user_sex {
     display: flex;
@@ -71,7 +71,6 @@
 
 .user_geo {
     display: flex;
-    justify-content: space-between;
 }
 
 .user_country,
@@ -82,8 +81,7 @@
     border: 1px solid orange;
 }
 
-.form_select_country_list {
-}
+.form_select_country_list {}
 
 .form_button {
     width: 100%;
@@ -91,30 +89,28 @@
     margin: 20px 0;
     border: 1px solid green;
 }
+
 .form_footer_text {
-    position: relative;
     text-align: center;
-    margin: 0 80px 40px 80px;
+    margin: 0 80px 40px;
 }
 
-.form_footer_text::after {
-    content: "" ;
+.form::after {
+    content: "";
     position: absolute;
     background: #E4E4E4;
-    height: 10px;
-    top: 0;
+    height: 1px;
+    bottom: -70px;
     left: 0;
-}
-.form_footer_span {
-}
-.form_footer_button {
-}
-.form_input_sex {
-}
-.form_select_country_item {
-}
-.form_select_input_city {
-}
-.form_footer_text_link {
+    width: 100%;
 }
 
+.form_footer_button {}
+
+.form_input_sex {}
+
+.form_select_country_item {}
+
+.form_select_input_city {}
+
+.form_footer_text_link {}
