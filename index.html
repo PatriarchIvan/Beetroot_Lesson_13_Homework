@@ -34,16 +34,17 @@
                 <div class="user_geo">
                     <div class="user_country">
                         <label for="form_select_country" class="form_country">Country</label>
-                        <select class="form_select_country_list" placeholder="Select" required>
+                        <!-- <span class="form_select_country_span">Select your country...</span> -->
+                        <select class="form_select_country_list" required>
                             <option value="" class="form_select_country_item">Ukraine</option>
-                            <option value="" class="form_select_country_item" disabled>Ru&#8623&#8623land</option>
                             <option value="" class="form_select_country_item">EU</option>
                             <option value="" class="form_select_country_item">USA</option>
                             <option value="" class="form_select_country_item">Other</option>
+                            <option value="" class="form_select_country_item" disabled>Ru&#8623&#8623land</option>
                         </select>
                     </div>
                     <div class="user_city">
-                        <label class="form_country">City<input type="text" class="form_select_input_city" required></label>
+                        <label class="form_city">City<input type="text" class="form_select_input_city" required></label>
                     </div>
                 </div>
                 <button type="submit" class="form_button">Sign Up</button>
@@ -64,11 +65,15 @@
         <section class="form_section_wrapper">
             <form action="#" class="form">
                 <h2 class="form_title">Profile</h2>
-                <div class="form_profile">
-                    <img src="./img/profile_photo" alt="User Photo" class="form_profile_photo">
-                    <input id='file_load'type="file" class="form_profile_load">
-                    <label for="file_load">Up to 1 MB (300x300 px)</label>
-                    <button class="form_profile_delete"></button>
+                <div class="form_profile_image">
+                    <div class="form_profile_button">
+                        <span class="form_profile_button_img"><img src="./img/icons/icon_photo.png" alt=""></span>
+                        <span class="form_profile_load_text">Up to 1 MB (300x300 px)</span>
+                    </div>
+                    <img src="./img/user_photo/Image.png" alt="User Photo" class="form_profile_photo">
+                    <input id="file_load" type="file" class="form_profile_load">
+                    
+                    <button class="form_profile_delete_btn"></button>
                 </div>
             </form>
         </section>
