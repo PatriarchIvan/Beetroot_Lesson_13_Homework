@@ -22,7 +22,7 @@
                             required></label>
                 </div>
                 <div class="user_email">
-                    <label class="form_email">E-mail<input type="mail" class="form_input_email" required></label>
+                    <label class="form_email">E-mail<input type="email" class="form_input_email" required></label>
                     <span class="form_email_text">We'll never share your email with anyone else.</span>
                 </div>
                 <div class="user_sex">
@@ -34,8 +34,7 @@
                 <div class="user_geo">
                     <div class="user_country">
                         <label for="form_select_country" class="form_country">Country</label>
-                        <!-- <span class="form_select_country_span">Select your country...</span> -->
-                        <select class="form_select_country_list" required>
+                        <select class="form_select_country_list" required id="form_select_country">
                             <option value="" class="form_select_country_item">Ukraine</option>
                             <option value="" class="form_select_country_item">EU</option>
                             <option value="" class="form_select_country_item">USA</option>
@@ -76,13 +75,13 @@
                 </div>
                 <div class="profile_name">
                     <label class="profile_input_title">Name<input type="text" class="profile_input_name"></label>
-                    <label class="profile_input_title">E-mail<input type="mail" class="profile_input_email"></label>
+                    <label class="profile_input_title">E-mail<input type="email" class="profile_input_email"></label>
                 </div>
                 <div class="profile_geo">
                     <div class="profile_country">
                         <label for="profile_select_country" class="profile_country">Country</label>
                         <!-- <span class="form_select_country_span">Select your country...</span> -->
-                        <select class="profile_select_country_list">
+                        <select class="profile_select_country_list" id="profile_select_country">
                             <option value="" class="profile_select_country_item">Ukraine</option>
                             <option value="" class="profile_select_country_item">EU</option>
                             <option value="" class="profile_select_country_item">USA</option>
